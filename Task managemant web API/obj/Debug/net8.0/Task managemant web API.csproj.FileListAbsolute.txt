@@ -172,3 +172,4 @@ F:\My_github_apps\life management web api\Task managemant web API\obj\Debug\net8
 F:\My_github_apps\life management web api\Task managemant web API\obj\Debug\net8.0\Task managemant web API.pdb
 F:\My_github_apps\life management web api\Task managemant web API\obj\Debug\net8.0\Task managemant web API.genruntimeconfig.cache
 F:\My_github_apps\life management web api\Task managemant web API\obj\Debug\net8.0\ref\Task managemant web API.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Debug\net8.0\Task managemant web API.sourcelink.json

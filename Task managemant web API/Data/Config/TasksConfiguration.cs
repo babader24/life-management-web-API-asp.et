@@ -18,9 +18,10 @@ namespace Task_managemant_web_API.Data.Config
 			builder.Property(x => x.IsDone)
 				.IsRequired();
 
+
 			builder.HasOne(x => x.Priority)
-				.WithOne(x => x.Tasks)
-				.HasForeignKey<Tasks>(x => x.PriorityId)
+				.WithMany(x => x.Tasks) 
+				.HasForeignKey(x => x.PriorityId)
 				.IsRequired();
 
 			builder.HasOne(x => x.DayOfWeek)
@@ -31,7 +32,7 @@ namespace Task_managemant_web_API.Data.Config
 			builder.HasOne(x => x.User)
 				.WithMany(x=> x.Tasks)
 				.HasForeignKey(x=> x.UserID)
-				.IsRequired(false);
+				.IsRequired(false);			
 
 
 			builder.ToTable("Tasks");
@@ -43,7 +44,9 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<Tasks>()
 			{
-				new Tasks {Id = 1, TaskDescription =  "i love Football", PriorityId = 1 , DayId = 1, IsDone = false, UserID = 1 }
+				new Tasks {Id = 1, TaskDescription =  "i love Football", PriorityId = 1 , DayId = 1, IsDone = false, UserID = 1 },
+				new Tasks {Id = 2, TaskDescription =  "i love Moon", PriorityId = 2 , DayId = 4, IsDone = false, UserID = 1 },
+				new Tasks {Id = 3, TaskDescription =  "i love Study", PriorityId = 1 , DayId = 3, IsDone = false, UserID = 1 },
 			
 
 			};

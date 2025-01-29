@@ -4,11 +4,9 @@
 	{
 		public int Id { get; set; }
 
-		public short DayNumber { get; set; }
+		public short DayNumber { get; set; }		
 
-		public Tasks? Task { get; set; }
-
-		public ICollection<Tasks> Tasks { get; set; } = new List<Tasks>();
+		public ICollection<Tasks>? Tasks { get; set; } = new List<Tasks>();
 	}
 
 

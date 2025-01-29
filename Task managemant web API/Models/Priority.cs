@@ -6,9 +6,9 @@
 
 		public short PriorityType { get; set; }
 
-		public Tasks? Tasks { get; set; }
+		//public Tasks Tasks { get; set; }
 
-		public ICollection<Task>? TasksList { get; set; }  = new List<Task>();
+		public ICollection<Tasks> Tasks { get; set; }  = new List<Tasks>();
 	}
 
 

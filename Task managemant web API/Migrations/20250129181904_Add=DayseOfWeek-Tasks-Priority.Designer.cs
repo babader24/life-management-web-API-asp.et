@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Task_managemant_web_API.Data;
 
@@ -11,9 +12,11 @@ using Task_managemant_web_API.Data;
 namespace Task_managemant_web_API.Migrations
 {
     [DbContext(typeof(AppDbContect))]
-    partial class AppDbContectModelSnapshot : ModelSnapshot
+    [Migration("20250129181904_Add=DayseOfWeek-Tasks-Priority")]
+    partial class AddDayseOfWeekTasksPriority
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

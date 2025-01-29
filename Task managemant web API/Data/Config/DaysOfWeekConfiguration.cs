@@ -15,7 +15,7 @@ namespace Task_managemant_web_API.Data.Config
 			builder.Property(x => x.DayNumber)
 				.IsRequired();
 
-			builder.ToTable("Priorities");
+			builder.ToTable("DaysOfWeeks");
 
 			builder.HasData(LoadDaysOfWeek());
 

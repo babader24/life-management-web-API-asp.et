@@ -9,7 +9,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<Color> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).UseIdentityColumn()
 				.IsRequired();
 
 			builder.Property(x => x.ColorCode).HasMaxLength(255);
@@ -28,11 +28,11 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<Color>()
 			{
-				new Color{Id= 1, ColorCode = "#FF6B6B"},
-				new Color{Id= 2, ColorCode = "#4ECDC4"},
-				new Color{Id= 3, ColorCode = "#96CEB4"},
-				new Color{Id= 4, ColorCode = "#FFEEAD"},
-				new Color{Id= 5, ColorCode = "#D4A5A5"},
+				new Color{Id=1, ColorCode = "#FF6B6B"},
+				new Color{Id=2, ColorCode = "#4ECDC4"},
+				new Color{ Id=3,ColorCode = "#96CEB4"},
+				new Color{Id=4,ColorCode = "#FFEEAD"},
+				new Color{Id=5, ColorCode = "#D4A5A5"},
 		
 			};
 		}

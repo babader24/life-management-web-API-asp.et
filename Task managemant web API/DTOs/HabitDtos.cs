@@ -1,9 +1,7 @@
 ﻿namespace Task_managemant_web_API.DTOs
 {
-	public class HabitDtos
+	public class HabitDto
 	{
-		public int Id { get; set; }
-
 		public string HabitName { get; set; }
 
 		public bool Sat { get; set; }

@@ -2,7 +2,6 @@
 {
 	public class StickyNoteDto
 	{
-		public int Id { get; set; }
 
 		public string? NoteDescription { get; set; }
 

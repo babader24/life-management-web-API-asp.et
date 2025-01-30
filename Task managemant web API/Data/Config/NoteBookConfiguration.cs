@@ -9,7 +9,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<NoteBook> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).ValueGeneratedOnAdd()
 				.IsRequired();
 
 			builder.Property(x => x.NoteBookTitle).HasMaxLength(50)
@@ -32,8 +32,8 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<NoteBook>()
 			{
-				new NoteBook() {Id = 1, NoteBookTitle = "Sport", NoteBookDescription = "I Should Run 3KM", UserID =1},
-				new NoteBook() {Id = 2, NoteBookTitle = "LifeStyle", NoteBookDescription = "Get Some Mobility Excercises ", UserID =1},
+				new NoteBook() { Id=1,NoteBookTitle = "Sport", NoteBookDescription = "I Should Run 3KM", UserID =1},
+				new NoteBook() { Id=2,NoteBookTitle = "LifeStyle", NoteBookDescription = "Get Some Mobility Excercises ", UserID =1},
 			};
 		}
 	}

@@ -9,7 +9,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<User> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).ValueGeneratedOnAdd()
 				.IsRequired();
 
 			builder.Property(x => x.UserName).HasMaxLength(255)
@@ -35,7 +35,7 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<User>()
 			{
-				new User {Id =1 , UserName = "Ahmed Babder", Password = "123", Email = "ahmed@gmail.com", Image = "asfjhkjnbvm"},
+				new User {Id=1, UserName = "Ahmed Babder", Password = "123", Email = "ahmed@gmail.com", Image = "asfjhkjnbvm"},
 			};
 		}
 	}

@@ -3,7 +3,6 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Task_managemant_web_API.Data;
 
@@ -12,11 +11,9 @@ using Task_managemant_web_API.Data;
 namespace Task_managemant_web_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250129181904_Add=DayseOfWeek-Tasks-Priority")]
-    partial class AddDayseOfWeekTasksPriority
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,7 +25,10 @@ namespace Task_managemant_web_API.Migrations
             modelBuilder.Entity("Task_managemant_web_API.Models.Color", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ColorCode")
                         .IsRequired()
@@ -117,6 +117,109 @@ namespace Task_managemant_web_API.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Task_managemant_web_API.Models.Habit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Fri")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("HabitName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<bool>("Mon")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Sat")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Sun")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Thu")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Tue")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Wed")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Habits", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Fri = false,
+                            HabitName = "Eat breakfast",
+                            Mon = true,
+                            Sat = true,
+                            Sun = false,
+                            Thu = true,
+                            Tue = false,
+                            UserId = 1,
+                            Wed = false
+                        });
+                });
+
+            modelBuilder.Entity("Task_managemant_web_API.Models.NoteBook", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("NoteBookDescription")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("NoteBookTitle")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Notebooks", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            NoteBookDescription = "I Should Run 3KM",
+                            NoteBookTitle = "Sport",
+                            UserID = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            NoteBookDescription = "Get Some Mobility Excercises ",
+                            NoteBookTitle = "LifeStyle",
+                            UserID = 1
+                        });
+                });
+
             modelBuilder.Entity("Task_managemant_web_API.Models.Priority", b =>
                 {
                     b.Property<int>("Id")
@@ -150,7 +253,10 @@ namespace Task_managemant_web_API.Migrations
             modelBuilder.Entity("Task_managemant_web_API.Models.StickyNote", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ColorID")
                         .HasColumnType("int");
@@ -213,7 +319,10 @@ namespace Task_managemant_web_API.Migrations
             modelBuilder.Entity("Task_managemant_web_API.Models.Tasks", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("DayId")
                         .HasColumnType("int");
@@ -275,7 +384,10 @@ namespace Task_managemant_web_API.Migrations
             modelBuilder.Entity("Task_managemant_web_API.Models.User", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -310,6 +422,28 @@ namespace Task_managemant_web_API.Migrations
                             Password = "123",
                             UserName = "Ahmed Babder"
                         });
+                });
+
+            modelBuilder.Entity("Task_managemant_web_API.Models.Habit", b =>
+                {
+                    b.HasOne("Task_managemant_web_API.Models.User", "User")
+                        .WithMany("habits")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Task_managemant_web_API.Models.NoteBook", b =>
+                {
+                    b.HasOne("Task_managemant_web_API.Models.User", "User")
+                        .WithMany("Notebooks")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Task_managemant_web_API.Models.StickyNote", b =>
@@ -371,7 +505,11 @@ namespace Task_managemant_web_API.Migrations
 
             modelBuilder.Entity("Task_managemant_web_API.Models.User", b =>
                 {
+                    b.Navigation("Notebooks");
+
                     b.Navigation("Tasks");
+
+                    b.Navigation("habits");
 
                     b.Navigation("stickyNotes");
                 });

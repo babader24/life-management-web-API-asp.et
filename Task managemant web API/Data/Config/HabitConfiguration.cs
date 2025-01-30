@@ -9,7 +9,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<Habit> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).ValueGeneratedOnAdd()
 				.IsRequired();
 
 			builder.Property(x=>x.HabitName).HasMaxLength(50)
@@ -27,7 +27,7 @@ namespace Task_managemant_web_API.Data.Config
 
 			builder.HasOne(x => x.User)
 				.WithMany(x => x.habits)
-				.HasForeignKey(x => x.Id)
+				.HasForeignKey(x => x.UserId)
 				.IsRequired();
 
 			builder.ToTable("Habits");
@@ -35,7 +35,7 @@ namespace Task_managemant_web_API.Data.Config
 			builder.HasData(
 				new List<Habit>()
 				{
-					new Habit { Id = 1, HabitName = "Eat breakfast", Sat = true,Sun = false,Mon = true,Tue = false,Wed = false,Thu = true,
+					new Habit {Id = 1,  HabitName = "Eat breakfast", Sat = true,Sun = false,Mon = true,Tue = false,Wed = false,Thu = true,
 					Fri = false,UserId = 1}
 				});
 		}

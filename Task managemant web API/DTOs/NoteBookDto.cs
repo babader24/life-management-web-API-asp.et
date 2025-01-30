@@ -8,7 +8,5 @@
 
 		public string? NoteBookDescription { get; set; }
 
-		public int UserID { get; set; }
-
 	}
 }

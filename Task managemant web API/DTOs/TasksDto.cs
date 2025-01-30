@@ -8,7 +8,6 @@
 
 		public bool IsDone { get; set; }
 
-
 		public int UserID { get; set; }
 
 		public int PriorityId { get; set; }

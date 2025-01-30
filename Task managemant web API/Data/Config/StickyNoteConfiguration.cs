@@ -10,7 +10,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<StickyNote> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).ValueGeneratedOnAdd()
 				.IsRequired();
 				
 
@@ -36,10 +36,10 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<StickyNote>()
 			{
-				new StickyNote {Id = 1, NoteDescription = "I am Jose Morinho", CreatedAt = Convert.ToDateTime("2025/01/20") , ColorID = 1, UserID = 1},
-				new StickyNote {Id = 2, NoteDescription = "I am Ahmed Babader", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 2, UserID = 1},
-				new StickyNote {Id = 3, NoteDescription = "I am Salim Mohammed", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 3, UserID = 1},
-				new StickyNote {Id = 4, NoteDescription = "I am Ali Ammar", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 4, UserID = 1},
+				new StickyNote {Id=1,NoteDescription = "I am Jose Morinho", CreatedAt = Convert.ToDateTime("2025/01/20") , ColorID = 1, UserID = 1},
+				new StickyNote {Id=2,NoteDescription = "I am Ahmed Babader", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 2, UserID = 1},
+				new StickyNote {Id=3,NoteDescription = "I am Salim Mohammed", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 3, UserID = 1},
+				new StickyNote {Id=4,NoteDescription = "I am Ali Ammar", CreatedAt = Convert.ToDateTime("2025/01/20"), ColorID = 4, UserID = 1},
 			};
 		}
 	}

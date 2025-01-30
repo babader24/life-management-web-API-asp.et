@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Task_managemant_web_API.Data;
+using Task_managemant_web_API.DTOs;
 using Task_managemant_web_API.Models;
 using Task_managemant_web_API.Repository.Base;
 
@@ -26,40 +27,42 @@ namespace Task_managemant_web_API.Controllers
 			return Ok(Users);
 		}
 
-		[HttpGet("{Id}")]
+		[HttpGet("{id}")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		[ProducesResponseType(StatusCodes.Status400BadRequest)]
 		[ProducesResponseType(StatusCodes.Status404NotFound)]
 
-		public async Task<IActionResult> User(int Id)
+		public async Task<IActionResult> GetUserById(int id)
 		{
-			if (Id < 0)
+			if (id < 0)
 			{
-				return BadRequest($"Not Accepted ID {Id}");
+				return BadRequest($"Not Accepted ID {id}");
 			}
 
-			var User = await _UserRepository.GetByIdAsync(Id);
-			if (User == null)
+			var User = await _UserRepository.GetByIdAsync(id);
+			if (User != null)
 			{
-				return NotFound($"User {Id} Not Found");
+				return Ok(User);
 			}
-			return Ok(User);
+			return NotFound($"User {id} Not Found");
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Post([FromBody] User user)
+		public async Task<IActionResult> Post([FromBody] CreateUserDto user)
 		{
 			var UserEntity = new User()
 			{
 				UserName = user.UserName,
 				Email = user.Email,
 				Password = user.Password,
-				Image = user.Image
+				Image = user.Image,
+				
+				
 			};
 			var craetedUser = await _UserRepository.AddAsync(UserEntity);
-			return CreatedAtAction(nameof(User), new { Id = craetedUser.Id }, craetedUser);
+			return CreatedAtAction(nameof(GetUserById), new { Id = craetedUser.Id }, craetedUser);
 		}
-		[HttpPut("{Id}")]
+		[HttpPut("{id}")]
 		public async Task<IActionResult> Put(int id, [FromBody] User user)
 		{
 			var UserEntity = await _UserRepository.GetByIdAsync(id);
@@ -76,7 +79,7 @@ namespace Task_managemant_web_API.Controllers
 			return NoContent();
 		}
 
-		[HttpDelete("{Id}")]
+		[HttpDelete("{id}")]
 		public async Task<IActionResult> Delete(int id)
 		{
 			var user = await _UserRepository.GetByIdAsync(id);

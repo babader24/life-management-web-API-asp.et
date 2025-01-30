@@ -9,7 +9,7 @@ namespace Task_managemant_web_API.Data.Config
 		public void Configure(EntityTypeBuilder<Tasks> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.Property(x => x.Id).ValueGeneratedNever()
+			builder.Property(x => x.Id).ValueGeneratedOnAdd()
 				.IsRequired();
 
 			builder.Property(x => x.TaskDescription).HasMaxLength(255)
@@ -44,9 +44,9 @@ namespace Task_managemant_web_API.Data.Config
 		{
 			return new List<Tasks>()
 			{
-				new Tasks {Id = 1, TaskDescription =  "i love Football", PriorityId = 1 , DayId = 1, IsDone = false, UserID = 1 },
-				new Tasks {Id = 2, TaskDescription =  "i love Moon", PriorityId = 2 , DayId = 4, IsDone = false, UserID = 1 },
-				new Tasks {Id = 3, TaskDescription =  "i love Study", PriorityId = 1 , DayId = 3, IsDone = false, UserID = 1 },
+				new Tasks { Id=1,TaskDescription =  "i love Football", PriorityId = 1 , DayId = 1, IsDone = false, UserID = 1 },
+				new Tasks {Id=2, TaskDescription =  "i love Moon", PriorityId = 2 , DayId = 4, IsDone = false, UserID = 1 },
+				new Tasks { Id=3,TaskDescription =  "i love Study", PriorityId = 1 , DayId = 3, IsDone = false, UserID = 1 },
 			
 
 			};

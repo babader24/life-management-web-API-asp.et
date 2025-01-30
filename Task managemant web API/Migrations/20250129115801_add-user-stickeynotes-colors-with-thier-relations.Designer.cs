@@ -11,7 +11,7 @@ using Task_managemant_web_API.Data;
 
 namespace Task_managemant_web_API.Migrations
 {
-    [DbContext(typeof(AppDbContect))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250129115801_add-user-stickeynotes-colors-with-thier-relations")]
     partial class adduserstickeynotescolorswiththierrelations
     {

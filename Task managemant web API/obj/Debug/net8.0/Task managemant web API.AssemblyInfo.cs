@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task managemant web API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db234a85e3c2c712717fff310bdea113e132800a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fec0c4f6549fcd57b2ad305e3f45cd5f3318639")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task managemant web API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task managemant web API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

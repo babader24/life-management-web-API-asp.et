@@ -10,7 +10,7 @@ using Task_managemant_web_API.Data;
 
 namespace Task_managemant_web_API.Migrations
 {
-    [DbContext(typeof(AppDbContect))]
+    [DbContext(typeof(AppDbContext))]
     partial class AppDbContectModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -111,6 +111,47 @@ namespace Task_managemant_web_API.Migrations
                         {
                             Id = 7,
                             DayNumber = (short)7
+                        });
+                });
+
+            modelBuilder.Entity("Task_managemant_web_API.Models.NoteBook", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NoteBookDescription")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("NoteBookTitle")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Notebooks", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            NoteBookDescription = "I Should Run 3KM",
+                            NoteBookTitle = "Sport",
+                            UserID = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            NoteBookDescription = "Get Some Mobility Excercises ",
+                            NoteBookTitle = "LifeStyle",
+                            UserID = 1
                         });
                 });
 
@@ -309,6 +350,17 @@ namespace Task_managemant_web_API.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Task_managemant_web_API.Models.NoteBook", b =>
+                {
+                    b.HasOne("Task_managemant_web_API.Models.User", "User")
+                        .WithMany("Notebooks")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Task_managemant_web_API.Models.StickyNote", b =>
                 {
                     b.HasOne("Task_managemant_web_API.Models.Color", "Color")
@@ -368,6 +420,8 @@ namespace Task_managemant_web_API.Migrations
 
             modelBuilder.Entity("Task_managemant_web_API.Models.User", b =>
                 {
+                    b.Navigation("Notebooks");
+
                     b.Navigation("Tasks");
 
                     b.Navigation("stickyNotes");

@@ -17,6 +17,7 @@ namespace Task_managemant_web_API.Data
 		public DbSet<Priority> priorities { get; set; }
 		public DbSet<DaysOfWeek> DaysOfWeeks { get; set; }
 		public DbSet<NoteBook> Notebooks { get; set; }
+		public DbSet<Habit> Habits { get; set; }
 
 
 		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "F:\\My_github_apps\\life management web api\\Task managemant web API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\data\\config\\habitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:data\\config\\habitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\models\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:models\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\data\\appdbcontect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:data\\appdbcontect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\data\\config\\priorityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:data\\config\\priorityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|f:\\my_github_apps\\life management web api\\task managemant web api\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A6E283-6EA1-4BA9-ADAB-4EABBB069562}|Task managemant web API.csproj|solutionrelative:repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HabitConfiguration.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\Config\\HabitConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\HabitConfiguration.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\Config\\HabitConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\HabitConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T07:16:32.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAA5wBQAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T07:15:17.921Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Habit.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\Habit.cs",
-              "RelativeDocumentMoniker": "Models\\Habit.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\Habit.cs",
-              "RelativeToolTip": "Models\\Habit.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA9wBgAAAAgAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
+              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "DTOs\\UserDto.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAIwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T06:51:45.641Z",
+              "WhenOpened": "2025-01-30T12:27:45.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-29T19:45:58.992Z"
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:17:28.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T19:41:38.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "UsersController.cs",
               "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwC0AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T19:34:25.303Z"
+              "WhenOpened": "2025-01-30T07:53:05.961Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PriorityConfiguration.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\Config\\PriorityConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\PriorityConfiguration.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\Config\\PriorityConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\PriorityConfiguration.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB4AAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository.cs",
+              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Repository\\Repository.cs",
+              "RelativeToolTip": "Repository\\Repository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T18:18:35.887Z"
+              "WhenOpened": "2025-01-30T07:33:09.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AppDbContect.cs",
-              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\AppDbContect.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContect.cs",
-              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Data\\AppDbContect.cs",
-              "RelativeToolTip": "Data\\AppDbContect.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAYwAkAAAAAAAAA",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Repository\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Base\\IRepository.cs",
+              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Repository\\Base\\IRepository.cs",
+              "RelativeToolTip": "Repository\\Base\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T18:18:23.338Z"
+              "WhenOpened": "2025-01-30T07:29:57.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\My_github_apps\\life management web api\\Task managemant web API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:41:38.704Z",
+              "EditorCaption": ""
             }
           ]
         }

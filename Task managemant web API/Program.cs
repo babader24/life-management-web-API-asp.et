@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Task_managemant_web_API.Data;
+using Task_managemant_web_API.Repository;
+using Task_managemant_web_API.Repository.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
 	options.UseSqlServer(
 		builder.Configuration.GetConnectionString("constr")));
+
+builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

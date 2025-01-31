@@ -63,7 +63,7 @@ namespace Task_managemant_web_API.Controllers
 			return CreatedAtAction(nameof(GetUserById), new { Id = craetedUser.Id }, craetedUser);
 		}
 		[HttpPut("{id}")]
-		public async Task<IActionResult> Put(int id, [FromBody] User user)
+		public async Task<IActionResult> Put(int id, [FromBody] CreateUserDto user)
 		{
 			var UserEntity = await _UserRepository.GetByIdAsync(id);
 			if (UserEntity == null)

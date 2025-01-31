@@ -1,0 +1,59 @@
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.exe
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.Development.json
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.json
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.runtimeconfig.json
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.pdb
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Azure.Core.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Azure.Identity.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Data.SqlClient.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Configuration.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Configuration.Json.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.FileProviders.Physical.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Logging.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Options.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Primitives.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Identity.Client.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.OpenApi.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.SqlServer.Server.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.ClientModel.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Drawing.Common.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Formats.Asn1.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.IO.Pipelines.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Memory.Data.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Runtime.Caching.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Security.Permissions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Text.Encodings.Web.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Text.Json.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\System.Windows.Extensions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Data.SqlClient.SNI.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.deps.json

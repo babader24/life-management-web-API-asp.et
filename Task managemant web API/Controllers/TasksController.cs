@@ -12,8 +12,13 @@ namespace Task_managemant_web_API.Controllers
 
 		private readonly IRepository<Tasks> _Tasksrepository;
 
-		// GET: api/<TasksController>
-		[HttpGet]
+        public TasksController(IRepository<Tasks> Tasksrepository)
+        {
+            _Tasksrepository = Tasksrepository;
+        }
+
+        // GET: api/<TasksController>
+        [HttpGet]
 		public async Task<IActionResult> Tasks()
 		{
 			var tasks = await _Tasksrepository.GetAllAsync();

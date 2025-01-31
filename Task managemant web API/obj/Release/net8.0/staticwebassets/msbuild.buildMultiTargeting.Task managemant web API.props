@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Task managemant web API.props" />
+</Project>

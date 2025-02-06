@@ -20,11 +20,26 @@ namespace Task_managemant_web_API.Controllers
         }
 
 		[HttpGet]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status200OK)]
 		public async Task<IActionResult> Users()
 		{
-			var Users = await _UserRepository.GetAllAsync();
+			var allUsers = await _UserRepository.GetAllAsync();
 
-			return Ok(Users);
+			if (allUsers == null || !allUsers.Any())
+			{
+				return NotFound("No users found.");
+			}
+
+			var users = allUsers.Select(user => new
+			{
+				UserId = user.Id,
+				UserName = user.UserName,
+				Email = user.Email,
+				Image = user.Image
+			}).ToList();
+
+			return Ok(users);
 		}
 
 		[HttpGet("{id}")]
@@ -34,17 +49,27 @@ namespace Task_managemant_web_API.Controllers
 
 		public async Task<IActionResult> GetUserById(int id)
 		{
-			if (id < 0)
+			if (id <= 0)
 			{
-				return BadRequest($"Not Accepted ID {id}");
+				return BadRequest($"Invalid ID: {id}");
 			}
 
-			var User = await _UserRepository.GetByIdAsync(id);
-			if (User != null)
+			var userEntity = await _UserRepository.GetByIdAsync(id);
+			if (userEntity == null)
 			{
-				return Ok(User);
+				return NotFound($"User with ID {id} not found.");
+
 			}
-			return NotFound($"User {id} Not Found");
+			var user = new ShowUserDto()
+			{
+				UserId = id,
+				UserName = userEntity.UserName,
+				Email = userEntity.Email,
+				Image = userEntity.Image,
+			};
+
+			return Ok(user);
+
 		}
 
 		[HttpPost]
@@ -91,5 +116,22 @@ namespace Task_managemant_web_API.Controllers
 			return NoContent();
 		}
 
+		[HttpGet("AllUserInfo/{id}")]
+		public async Task<IActionResult> GetAllUserInfo(int id)
+		{
+			if (id < 0)
+			{
+				return BadRequest($"Not Accepted ID {id}");
+			}
+
+			var User = await _UserRepository.GetAllUserInfoByIdAsync(id);
+			if (User != null)
+			{
+				
+				return Ok(User);
+			}
+			return NotFound($"User {id} Not Found");
+
+		}
 	}
 }

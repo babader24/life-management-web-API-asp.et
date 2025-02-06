@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Task_managemant_web_API.Data;
+using Task_managemant_web_API.Models;
 using Task_managemant_web_API.Repository.Base;
 
 namespace Task_managemant_web_API.Repository
@@ -32,6 +33,17 @@ namespace Task_managemant_web_API.Repository
 			return	await _dbSet.ToListAsync();
 		}
 
+		public async Task<User> GetAllUserInfoByIdAsync(int id)
+		{
+			var User =await _Context.Users.Include(u => u.stickyNotes)
+									   .Include(u => u.Tasks)
+									   .Include(u => u.Notebooks)
+		                               .Include(u => u.habits)
+									  .FirstOrDefaultAsync(u => u.Id == id);
+			
+			return User;
+		}
+
 		public async Task<T> GetByIdAsync(int id)
 		{
 	
@@ -44,5 +56,6 @@ namespace Task_managemant_web_API.Repository
 			_Context.Entry(entity).State = EntityState.Modified;
 			await _Context.SaveChangesAsync();
 		}
+
 	}
 }

@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Task_managemant_web_API.Models
 {
 	public class Tasks
 	{
-		[Key]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		
 		public int Id { get; set; }
 		
 		public string? TaskDescription { get; set; }
@@ -15,14 +15,16 @@ namespace Task_managemant_web_API.Models
 
 
 		public int UserID { get; set; }
-		public User User { get; set; }
+		[JsonIgnore]
+		public virtual User User { get; set; }
 
 		public int PriorityId { get; set; }
-		public Priority	Priority { get; set; }
+		[JsonIgnore]
+		public virtual Priority	Priority { get; set; }
 
 		public int DayId { get; set; }
-
-		public DaysOfWeek DayOfWeek { get; set; }
+		[JsonIgnore]
+		public virtual DaysOfWeek DayOfWeek { get; set; }
 
 
 

@@ -14,9 +14,9 @@ namespace Task_managemant_web_API.Data.Config
 
 			builder.Property(x => x.ColorCode).HasMaxLength(255);
 
-			builder.HasOne(x => x.StickyNote)
+			builder.HasMany(x => x.StickyNotes)
 				.WithOne(x => x.Color)
-				.HasForeignKey<StickyNote>(x => x.ColorID)
+				.HasForeignKey(x => x.ColorID)
 				.IsRequired();
 
 			builder.ToTable("Colors");

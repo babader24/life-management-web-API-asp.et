@@ -15,4 +15,15 @@ namespace Task_managemant_web_API.DTOs
 
 	}
 
+	public class ShowUserDto
+	{
+		
+		public int UserId { get; set; }
+		public string UserName { get; set; }
+
+		public string? Email { get; set; }
+		public string? Image { get; set; }
+
+	}
+
 }

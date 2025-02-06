@@ -6,10 +6,12 @@ F:\My_github_apps\life management web api\Task managemant web API\obj\Release\ne
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Task managemant web API.pdb
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Azure.Core.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Azure.Identity.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Castle.Core.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Data.SqlClient.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Proxies.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll

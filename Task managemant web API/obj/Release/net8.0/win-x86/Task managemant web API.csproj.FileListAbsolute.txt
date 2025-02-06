@@ -161,3 +161,5 @@ F:\My_github_apps\life management web api\Task managemant web API\obj\Release\ne
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\Task managemant web API.pdb
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\Task managemant web API.genruntimeconfig.cache
 F:\My_github_apps\life management web api\Task managemant web API\obj\Release\net8.0\win-x86\ref\Task managemant web API.dll
+F:\My_github_apps\life management web api\Task managemant web API\bin\Release\net8.0\win-x86\Castle.Core.dll
+F:\My_github_apps\life management web api\Task managemant web API\bin\Release\net8.0\win-x86\Microsoft.EntityFrameworkCore.Proxies.dll

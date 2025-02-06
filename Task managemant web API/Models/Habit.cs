@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Task_managemant_web_API.Models
 {
 	public class Habit
 	{
-		[Key]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+	
 		public int Id { get; set; }
 
 		public string HabitName { get; set; }
@@ -26,7 +26,7 @@ namespace Task_managemant_web_API.Models
 		public bool Fri { get; set; }
 
 		public int UserId { get; set; }
-
-		public User User { get; set; }
+		[JsonIgnore]
+		public virtual User User { get; set; }
     }
 }

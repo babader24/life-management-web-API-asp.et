@@ -74,8 +74,7 @@ namespace Task_managemant_web_API.Controllers
 			if (Sticky == null)
 			{
 				return NotFound();
-			}
-		
+			}		
 
 			await _StickyNoteRepository.DeleteAsync(Sticky);
 			return NoContent();

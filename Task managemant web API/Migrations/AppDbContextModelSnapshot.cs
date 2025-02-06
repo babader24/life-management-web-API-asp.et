@@ -274,8 +274,7 @@ namespace Task_managemant_web_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ColorID")
-                        .IsUnique();
+                    b.HasIndex("ColorID");
 
                     b.HasIndex("UserID");
 
@@ -449,8 +448,8 @@ namespace Task_managemant_web_API.Migrations
             modelBuilder.Entity("Task_managemant_web_API.Models.StickyNote", b =>
                 {
                     b.HasOne("Task_managemant_web_API.Models.Color", "Color")
-                        .WithOne("StickyNote")
-                        .HasForeignKey("Task_managemant_web_API.Models.StickyNote", "ColorID")
+                        .WithMany("StickyNotes")
+                        .HasForeignKey("ColorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -490,7 +489,7 @@ namespace Task_managemant_web_API.Migrations
 
             modelBuilder.Entity("Task_managemant_web_API.Models.Color", b =>
                 {
-                    b.Navigation("StickyNote");
+                    b.Navigation("StickyNotes");
                 });
 
             modelBuilder.Entity("Task_managemant_web_API.Models.DaysOfWeek", b =>
